@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cricket</title>
+  <style>
+    body{
+      text-align: center;
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  <h1  >cricket game</h1>
+  <h2>Bat Ball stump</h2>
+  <button onclick="
+  let first=firs();
+  let second=sec('bat',first);
+  let third=print(second);">Bat</button>
+  <button onclick="
+  first=firs()
+   second=sec('ball',first);
+   third=print(second)">Ball</button>
+  <button onclick="
+   first=firs()
+   second=sec('stump',first);
+   third=print(second)">Stump</button>
+   <button onclick=" restart();
+   resetscore()">restart the game</button>
+<script>
+  let objectsrc=localStorage.getItem('abhishek');
+  let object;
+   resetscore(objectsrc);
+  
+   function resetscore(objectsrc)
+{
+    object=objectsrc? JSON.parse(objectsrc): {
+    win:0,
+    lost:0,
+    tied:0,
+    };
+   object.displayobject = function()
+    {
+      return `win: ${object.win}, lost: ${object.lost}, tied: ${object.tied}`;
+    };
+}
+  
+  
+  function firs()
+  {
+    let choice;
+    let computer=Math.random()*3;
+    if(computer>0 && computer<=1)
+    {
+      return "Bat";
+    }
+    else if(computer>1 && computer<=2)
+    {
+      return "ball";
+    }
+    else{
+      return "stump";
+    }
+
+  }
+  function sec(user,computer)
+  {
+    if(user=='bat')
+    {
+       if(computer==='bat')
+       {
+        object.tied+=1;
+        return 'Match has been tied';
+       }
+       else if(computer==='ball')
+       {
+        object.win+=1;
+        return 'You have won the game';
+       }
+       else{
+        object.lost+=1;
+        return 'computer has won the game';
+       }
+    }
+    else if(user=='ball')
+    {
+      if(computer==='bat')
+      {
+        object.lost+=1;
+        return 'You lost the game';
+      }
+      else if(computer==='ball')
+      {
+        object.tied+=1;
+        return 'The match has been tied';
+      }
+      else{
+        object.win+=1;
+        return 'You have Won the Match';
+      }
+    }
+    else{
+      if(computer==='stump')
+      {
+        object.tied+=1;
+        return 'The Match has been tied';
+      }
+      else if(computer==='bat')
+      {
+        object.win+=1;
+        return 'You Won the Match';
+      }
+      else
+      {
+        object.lost+=1;
+        return 'You lost the Match';
+      }
+
+    }
+  }
+
+  function print(mess)
+  {
+    localStorage.setItem('abhishek',JSON.stringify(object));
+    //console.log(object);
+    alert(`the rsult ${mess} 
+    
+    
+    ${object.displayobject()};
+    
+    `);
+  }
+  function restart()
+  {
+    localStorage.clear();
+  }
+
+
+</script>
+  
+</body>
+</html>
