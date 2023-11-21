@@ -4,28 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cricket</title>
+  <link rel="stylesheet" href="cricket.css">
   <style>
     body{
       text-align: center;
-      background-color: brown;
+      /* background-color: brown; */
     }
   </style>
 </head>
 <body>
   <h1  >cricket game</h1>
   <h2>Bat Ball stump</h2>
-  <button onclick="
+  <button class="shu-kla"  onclick="
   let first=firs();
   let second=sec('bat',first);
-  let third=print(second);">Bat</button>
-  <button onclick="
+  let third=print(second);">  <img src="https://4.imimg.com/data4/VJ/MX/MY-24846209/cricket-bats.jpg" alt="bat" class="abhi-shek"></button>
+  <button class="shu-kla" onclick="
   first=firs()
    second=sec('ball',first);
-   third=print(second)">Ball</button>
-  <button onclick="
+   third=print(second)"><img src="https://cdn-d03d5231-5b2e278c.mysagestore.com/cf738e9579802e6b988bb225ca6bc00c/contents/1A2455/1A2455M01-cricket-ball-county-star-front.jpg" alt="ball" class="abhi-shek"></button>
+  <button class="shu-kla" onclick="
    first=firs()
    second=sec('stump',first);
-   third=print(second)">Stump</button>
+   third=print(second)"><img src="https://nwscdn.com/media/catalog/product/1/0/100_portable_cricket_stumps_for_training_matches.jpg" alt="stump" class="abhi-shek" ></button>
+   <h3 class="my-user">outcome</h3>
+   <h3 class="score-of">score</h3>
    <button onclick=" restart();
    resetscore()">restart the game</button>
 <script>
@@ -124,12 +127,8 @@
   {
     localStorage.setItem('abhishek',JSON.stringify(object));
     //console.log(object);
-    alert(`the rsult ${mess} 
-    
-    
-    ${object.displayobject()};
-    
-    `);
+    document.querySelector('.my-user').innerHTML=`the result is that ${mess}`;
+    document.querySelector('.score-of').innerText= object.displayobject();
   }
   function restart()
   {
