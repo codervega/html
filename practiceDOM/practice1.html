@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- <body onclick="abhishek()"> -->
+  <body>
+  <h1>let's learn</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla explicabo, in odio provident veniam, tempora adipisci dignissimos unde possimus repellat pariatur vero dolorum. Odio consectetur facere sint placeat perferendis.</p>
+  <button>shukla</button>
+  <p id="abhi"></p>
+  <script>
+    document.addEventListener("click",abhishek);
+    // document.addEventListener("click",thankyou);
+    function abhishek()
+    {
+      let shukla=document.activeElement.tagName;
+      console.log(shukla);
+      document.getElementById("abhi").innerText+=shukla;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="abhishek"></h1>
+  <script>
+    let object={
+      name:"abhishek",
+      secondname:"shukla",
+      age:23,
+
+    };
+    console.log(object);
+    for(let x in object){
+      let text=object[x];
+      console.log(text);
+    }
+    object.natinality='Indian';
+    console.log(object);
+    delete object.natinality;
+    console.log(object);
+    delete object;
+    let objeect={
+      college:"srivenkatedhwaraCollegeOfEngineering",
+      grade:"cgpa",
+      obtained:[6.9,8.2,7.08,6.92,7.23,7.79],
+    }
+    console.log(objeect.obtained[3])
+    // in js we can basically have methode inside an object let's try to understand the concept with given example
+    let student={
+      firstname:"Abhishek",
+      lastname:"Shukla",
+      age:21,
+      studentskill : function(){
+         return "abhihekshukla has very good knowledge of Java-Fullstack-development";
+      },
+       kabhi: function(){
+           return this.firstname +" "+ this.lastname;
+      },
+      
+    };
+    student.mobile=function(){
+      return "Abhihsek Shukla has no phone";
+    }
+    console.log(student.studentskill());
+    console.log(student.kabhi());
+    console.log(student.mobile());
+  </script>
+</body>
+</html>
