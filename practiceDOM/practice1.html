@@ -7,19 +7,76 @@
 </head>
 <!-- <body onclick="abhishek()"> -->
   <body>
-  <h1>let's learn</h1>
+  <!-- <h1>let's learn</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla explicabo, in odio provident veniam, tempora adipisci dignissimos unde possimus repellat pariatur vero dolorum. Odio consectetur facere sint placeat perferendis.</p>
-  <button>shukla</button>
-  <p id="abhi"></p>
+  <button>shukla</button> -->
+  <p id="abhi" style="font-size: 30px;"></p>
   <script>
-    document.addEventListener("click",abhishek);
-    // document.addEventListener("click",thankyou);
-    function abhishek()
-    {
-      let shukla=document.activeElement.tagName;
-      console.log(shukla);
-      document.getElementById("abhi").innerText+=shukla;
-    }
+    // document.addEventListener("click",abhishek);
+    // // document.addEventListener("click",thankyou);
+    // function abhishek()
+    // {
+    //   let shukla=document.activeElement.tagName;
+    //   console.log(shukla);
+    //   document.getElementById("abhi").innerText+=shukla;
+    // }
+     let person={
+     name:'Abhishekshukla',
+     Age:221,
+     birthplace:'partapgard-up-72',
+     dateofbirth:new Date(),
+    };
+    person.college=function(){
+      return 'Abhishek shukla Studies at Sri Venkateshwara College Of Engineering';
+    };
+    console.log(person);
+    console.log(person.college());
+
+    // let txt="";
+    // for (let x in person)
+    // {
+    //   txt+=person[x] +' ';
+    // }
+  //  document.getElementById("abhi").innerHTML=txt;
+  // let array=Object.values(person);
+  // document.getElementById("abhi").innerHTML=array;
+  let str=JSON.stringify(person);
+  document.getElementById("abhi").innerHTML=str;
+  let india={
+    uttar_pradesh:"LUCKNOW",
+    MADHYA_PRADESH:"Bhopal",
+    Karnataka:"Bangalore",
+    Maharastr:"Pune",
+   get Maharastra(){
+    return this.Maharastr;
+   },
+   Gujarat:"Gandhinagar",
+  };
+  console.log(india.Maharastra);
+  // will study about setter method in javascript
+  // the setter function basically used to set custom behavior when property is already been set let's Try To understand the concept of setter from the below example
+  // I am  defining an object called Schools
+  let school={
+     name:"",
+     set schoolname(sch){
+        this.name=sch.toUpperCase();
+     }
+  };
+  school.schoolname="Soniya English high School";
+  console.log(school.name);
+  // now let's Discuss about the Object.defineProperty() and getter and setter property in JS
+  // let be define object1
+  let object1={}
+  Object.defineProperty(object1,'name',{
+    value:'Abhishek',
+    writable:false
+  });
+  console.log(object1.name);
+  // console.log(object1.Lastname);
+  // console.log(object1.age);
+  object1.name='shukla';
+  console.log(object1.name);
+
   </script>
 </body>
 </html>
