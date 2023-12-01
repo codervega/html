@@ -29,6 +29,56 @@
      console.log(car.make); //it is working
      delete car.Year;
      console.log(car.Year);
+     function America(city1,city2,city3,city4) //This is called as object constructor which basically used to create multiple object of same type
+     {
+      this.city1=city1;
+      this.city2=city2;
+      this.city3=city3;
+      this.city4=city4;
+     } 
+     let indoAmericans=new America("New York","Los Angeles","Chicago","Houston");
+     console.log(indoAmericans); 
+    //  now let's Try to Construct an obejct constructor function which will basically have used as a class
+    function Person(name,birthplace,dateofbirth,state, county)
+    {
+      this.name=name;
+      this.birthplace=birthplace;
+      this.dateofbirth=dateofbirth;
+      this.state=state;
+      this.county=county;
+    }
+    let Student1=new Person('Abhishek Shukla','Pratapgard',2000,'Karnataka','India');
+    let student2=new Person('Varun Shukla','Los angilis',2005,'california','America');
+    console.log(Student1);
+    console.log(student2);
+    console.log(Student1.state);
+    console.log(student2.county); 
+    // here this keyword refers to an object which basically refers to current obejct 
+    // now let's see some common manipulation in object created from Obect function()
+    // we are already having an object now adding new propwrt and methods in the object()
+   Student1.occupation='Software Engineer';
+   console.log(Student1);
+   console.log(Student1.occupation);
+  //  Now adding New Method To an object which is constructed using object function() is using below method;
+  Student1.Info=function(){
+    return "the Name of the Person is "+ this.name;
+  }
+    console.log(Student1.Info());
+    // We can Add New Method to an obejct constructor function same as the Method added In the object()
+    function India()
+    {
+           this.city1="";
+           this.city2="";
+           this.city3="";
+          this.captial=function(name)
+           {
+              this.city1=name;
+           };
+    }
+    let Myindia=new India();
+    Myindia.captial("Bangalore");
+    console.log(Myindia.city1);
+
   </script>
 </body>
 </html>
