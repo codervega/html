@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arrays In js</title>
+</head>
+<body>
+  <script>
+    let abhishek=[187,'Abhishek Shukla','BE', {'Sem':7}];
+    console.log(abhishek[1]);
+    let k=Array.isArray(abhishek);
+    if(k==1)
+    {
+      console.log(`it's an array`);
+    }
+    else {
+      console.log(`it's Not an Array`);
+    }
+    abhishek.push(9);
+    console.log(abhishek);
+    abhishek.pop(9);
+    console.log(abhishek);
+    console.log('the New element added to array at ' +abhishek.push(4));
+    abhishek.shift();
+    console.log(abhishek)
+    abhishek.splice(1,2);
+    console.log(abhishek);
+    console.log(abhishek.toString());
+    abhishek.push(2);
+    abhishek.push(23445);
+    abhishek.push(567);
+    console.log(abhishek.sort());
+     let shukla=[2,2,1,3,4,2,4,2];
+     console.log(shukla.sort());
+  </script>
+</body>
+</html>
