@@ -14,13 +14,95 @@
     *{
       margin: 0;
     }
+    figure{
+      text-align: center;
+    }
+    body{
+      background-color: rgb(255, 255, 255);
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+      color: blue;
+    }
+    #pop{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-self: center;
+    }
+    input{
+      margin-bottom: 10px;
+      background-color: antiquewhite;
+      border: none;
+    }
+    input:hover{
+      background-color: rgb(116, 144, 153);
+    }
+    #abc:hover{
+      background-color: orange;
+      border: 1px solid orange;
+      cursor: pointer;
+    }
+    #sub1:hover{
+      background-color: orange;
+      border: 1px solid orange;
+      cursor: pointer;
+    }
+    dailog{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
   </style>
 </head>
 <body>
-  <header style="background-color: red;">1</header>
+  <header style="background-color: rgb(194, 177, 177); display: flex;justify-content: space-around;align-items: center;">
+    <img src="https://zeevector.com/wp-content/uploads/Azadi-Ka-Amrit-Mahotsav-Logo-PNG@zeevector.png" alt="india" height="30px">
+    <nav style="display: flex;justify-content: space-between;align-items: center; width: 70%;">
+      <a href="#sec1">Introduction</a>
+      <a href="#religion">Religion</a>
+      <a href="#art">Art And Craft</a>
+      <a href="#literacy">Literacy</a>
+      <a href="#dress">Dress</a>
+      <a href="#lifestyla">Life Styla</a>
+      <a href="#food">Food and Dance</a>
+      <a href="#famous-place">Places</a>
+    </nav>
+    <nav>
+      <button type="button" style="background-color: red;" id="sign">Log-in</button>
+      <button type="button" style="background-color: red;" id="login">Sig-in</button>
+    </nav>
+  </header><br>
   <center>
     <h1><b>A Brief Introduction of <span style="color: red;">Uttrakhand</span></b></h1>
   </center><br>
+  
+    
+      <div id="pop">
+        <dialog id="akm">
+       
+          <h1>Login form</h1>
+          <form >
+            <input type="text" name="name" id="" placeholder="email-id" required><br>
+            <input type="tel" name="tele" id="" placeholder="Password" required><br>
+            <input type="submit" value="submit" id="abc" style="width: 100% ;background-color: rgb(141, 141, 185);color: white;">
+          </form> 
+        </dialog>
+        
+      </div>
+      <dialog id="sign-in">
+        <h1>Sig-in form</h1>
+        <form>
+          <input type="text" placeholder="Enter Email" required><br>
+          <input type="password" name="" id="" placeholder="Create password"><br>
+          <input type="password" name="" id="" placeholder="Confirm Password"><br>
+          <input type="submit" value="Submit" id="sub1" style="width: 100%; background-color: rgb(141, 141, 185);color: white;">
+        </form>
+      </dialog>
+    
   <section id="sec1" >
     <article><p>The 27th state of Republic of India, Devbhoomi Uttarakhand that was formed in the year 2000 after being separated from the large state of Uttar Pradesh, is a destination to explore the riches of Indian culture, history, and natural beauty. The state that borders Tibet to the north; Nepal to the east; the state of Uttar Pradesh to the south; and Himachal Pradesh to the west and north-west, is divided into regions, Garhwal and Kumaon, which further break into 13 districts. Earlier, the state was named Uttaranchal by Bhartiya Janta Party (BJP) led central government and Uttar Pradesh State Government when they started a fresh round of state reorganisation in 1998. However, in 2006, Union Cabinet of India to the agreed to the demands of the Uttaranchal Legislative Assembly and leading members of the Uttarakhand Statehood Movement and renamed Uttaranchal as Uttarakhand. The state also finds its mention in history as a part of the Kuru and the Panchal kingdoms (mahajanpads) during the Vedic age. In Hindu mythology also, Uttarakhand has been recognized as a part of the famed Kedarkhand (Now Garhwal) and Manaskhand (Kumaon). It is also believed the famous sage Vyas composed the epic of Mahabharata in Uttarakhand. The signs of the practise of Shaivism in ancient times along with Buddhism and Folk Shamanic religion was also found in the state.
 <br>
@@ -37,7 +119,7 @@
   </section><br>
   <hr><br>
   <section>
-    <article style="display: flex; gap: 30px;">
+    <article id="religion" style="display: flex; gap: 30px; ">
       <img src="https://www.tourmyindia.com/states/uttarakhand/images/about-religon.jpg" alt="india">
       <header>
         <h2>About religion</h2>
@@ -46,14 +128,14 @@
           A major section of the people in Uttarakhand are Hindus. However, the state maintains a secular ambience with significant number of people belonging to other faiths like Islam, Sikhism, Buddhism and Christianity. According to the census conducted in 2011, there were Hinduism about 82.97% of the total population of Uttarakhand, whereas people following Islam were 13.95% and those following Sikhism were 2.34%, Christianity (0.37%), Buddhism (0.15%), and Jainism (0.09%).</i></p>
       </header>
     </article><br>
-    <article style="display: flex; gap: 30px;">
+    <article id="art" style="display: flex; gap: 30px;">
       <img src="https://www.tourmyindia.com/states/uttarakhand/images/about-art.jpg" alt="india">
      <header>
       <h2><b>About Art & Craft</b></h2>
       <p><i>The land of Uttarakhand is full of artisans and variety of art and craft. Both the rural and urban people indulge in producing/manufacturing some incredible crafts that are worth witnessing. Woodwork is a significant art form that the locals of Uttarakhand practise, apart from it, paintings from Garhwal School of Paintings and murals like Aipan demonstrate skills of the natives. The Ringaal Handicraft that is practised by a backward community named the same, is quite appreciable. The Rambaan Handicraft done by using Jute and Hemp also reflects the rich art and craft of Uttarakhand. Apart from it the woollen knitted wear and embroidered cushion covers, carpets, bedsheets and curtains by the rural women or urban women groups are a must buy from Uttarakhand. The candle making skills in the state are also at par excellence, there is an entire market in Nainital that is dedicated to this art</i></p>
      </header>
     </article><br>
-    <article style="display: flex;gap: 30px;">
+    <article id="literacy" style="display: flex;gap: 30px;">
       <img src="https://www.tourmyindia.com/states/uttarakhand/images/about-literacy.jpg" alt="india">
       <header>
         <h2><b>
@@ -61,7 +143,7 @@
         <p><i>The literacy rate of Uttarakhand is 79.63% with 88.33% literacy for males and 70.70% literacy for females according to the census in 2011. The state stands at 17th position in India when it comes to literacy.</i></p>
       </header>
     </article><br>
-    <article style="display: flex;gap: 30px;"> 
+    <article id="lifestyla" style="display: flex;gap: 30px;"> 
       <figure style="display: flex; flex-direction: column;align-items: center;justify-content: center;">
        <img src="https://www.tourmyindia.com/states/uttarakhand/images/lifestyle.jpg" alt="india">
        <!-- <figcaption><i>best among all</i></figcaption> -->
@@ -79,7 +161,7 @@
           Source of Economy</b></h2><p><i>Uttarakhand is largely dependent on its agriculture for the revenue. Basmati rice, wheat, soybeans, groundnuts, coarse cereals, pulses, and oil seeds are the most widely grown crops in the state. There are also fruits like apples, oranges, pears, peaches, litchis, and plums that are widely grown in the state and bring a good amount of revenue. Other key industries for the source of economy include tourism and hydropower, and recently development in IT, ITES, biotechnology, pharmaceuticals, and automobile industries can also be seen in the state.  </i></p>
       </header>
     </article><br>
-    <article style="display: flex;gap: 30px;">
+    <article id="dress" style="display: flex;gap: 30px;">
       <figure style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
         <img src="https://www.tourmyindia.com/states/uttarakhand/images/old-new-genration.jpg" alt="india">
       </figure>
@@ -93,25 +175,61 @@
     </article><br>
     
   </section>
-  <hr>
-  <section>
-    <br>
+  
+  <section id="famous-place" style="background-color: azure; border: 1px solid black;">
     <center>
-      <h2><strong>Famous Side seaing Places</strong></h2>
+      <h2><strong>Famous Side seeing Places</strong></h2>
     </center><br>
-    <figure style="border: 1px solid black; padding: 1px;padding-left: 10px;">
+    <figure>
       <img src="https://th.bing.com/th/id/OIP.TaK3euvY5hHpSBr1GMlhPgHaFw?rs=1&pid=ImgDetMain" alt="kedarnath" height="180px">
       <img src="https://res.klook.com/image/upload/cities/pvoqjb09t31inneitzfi.jpg" alt="famous" height="180px">
       <img src="https://th.bing.com/th/id/OIP.IaPVWTy-7A3cSaoFy-CL1AHaE8?rs=1&pid=ImgDetMain" alt="famous" height="180px">
       <img src="https://www.tourmyindia.com/socialimg/uttarakhand-tourism.jpg" alt="india" height="180px">
-      <img src="https://blog.thomascook.in/wp-content/uploads/2017/10/Untitled-design-95-Custom.jpg" alt="india" height="180px" >
+      <!-- <img src="https://blog.thomascook.in/wp-content/uploads/2017/10/Untitled-design-95-Custom.jpg" alt="india" height="180px" > -->
       <img src="https://th.bing.com/th/id/OIP.ttqrmZVpBtUItUkzh2NpugHaE8?rs=1&pid=ImgDetMain" alt="india" height="180px">
-      <img src="https://wallpapercave.com/wp/wp6674217.jpg" alt="jdahd" height="180px">
+      <img src="https://wallpapercave.com/wp/wp6674217.jpg" alt="jdahd" height="180px" style="margin-left: 10px;margin-right: 10px;">
       <img src="https://www.templepurohit.com/wp-content/uploads/2016/01/Surkanda_Devi_Temple_Dhanaulti_17893.jpg" alt="india" height="180px">
-      <img src="" alt="">
-      <figcaption><i>This are some famous places in Uttrakhand</i></figcaption>
+      <img src="https://www.indiaimagine.com/wp-content/uploads/2020/06/offbeat-destinations-in-uttarakhand-featured.jpg" alt="india" height="180px">
+      <center><figcaption><i>This are some famous places in Uttrakhand</i></figcaption></center>
     </figure>
-  </section><br>
+  </section>
+  <section id="food" style="background-color: rgb(119, 144, 145);">
+   <center> <h2><strong>Famous foods and Culture of Uttrakhand</strong></h2></center>
+    <div style="display: flex; justify-content: space-between;">
+    <figure style="border: 1px solid black;">
+     <img src="https://www.tourmyindia.com/states/uttarakhand/images/local-food.jpg" alt="infia">
+     <figcaption><h6><b>POPULAR LOCAL FOOD</b></h6>
+    <p>Daal, Bhaat, Kafuli, Phaanu, Baadi, Ras, Bhatt Ki Churdkani, Arsa, Gulgula, Gahat ke Paranthe, Bhang Ki Chutney, Aalu Ka Jhol, Chainsoo, Aalu Gutook, Kumaoni Raita, Sisunak Saag, Thhatwani, Dubuk, Singodi, Jhangora Ki Kheer.</p></figcaption>
+    </figure>
+    <figure style="border: 1px solid black;">
+      <img src="https://www.tourmyindia.com/states/uttarakhand/images/folk-music.jpg" alt="infia">
+      <figcaption><h6><b>LOCAL FOLK MUSIC & DANCE</b></h6>
+     <p>Chhopati, Chounphula, Jhumeila, Basanti, Mangal Barada Nati, Bhotiya Dance, Chancheri, Chhapeli, Choliya Dance, Jagars, Jhora, Langvir Dance, Langvir Nritya, Pandav Nritya, Ramola, Shotiya Tribal Folk Dances, Thali-Jadda, and Jhainta.</p></figcaption>
+     <br>
+  </div>
+  </section>
+  <footer style="height: 20vh;display: flex;flex-direction: column;justify-content: center;align-items: center; background-color: burlywood;">
+    <article style="width: 100%;">
+      <center><h1>uttrakhand</h1>
+        <P style="margin: 2px;"><small>&copy; uk-2023</small></P>
+        <div style="display: flex;justify-content: space-between;width: 50%;">
+          <p><a href="">Legal Staff</a></p>
+          <p><a href="">Private Policy</a></p>
+          <p><a href="">Secuirty</a></p>
+        </div>
+      </center>
+  </article>
+  
+  </footer>
+  <script>
+    document.getElementById('sign').onclick=function(){
+      document.getElementById('akm').show();
+    }
+    document.getElementById('login').onclick=function(){
+      document.getElementById('sign-in').show();
+    }
+  </script>
+  
   
 </body>
 </html>
