@@ -1,42 +1,48 @@
+"""Apply EM algorithm to cluster a set of data stored in a .CSV file. Use the same data set for clustering using
+k-Means algorithm. Compare the results of these two algorithms and comment on the quality of clustering. You can add
+Java/Python ML library classes/API in the program """
+
 import matplotlib.pyplot as plt
 from sklearn import datasets
-from sklearn.mixture import GaussianMixture
-from sklearn.cluster import kMeans
+from sklearn.cluster import KMeans
+from sklearn.mixture import GaussianMixture 
+import sklearn.metrics as sm
 import pandas as pd
 import numpy as np
-import sklearn.metrics as su
 
-iris=datasets.load_iris()
-X=pd.Dataframe(iris.data)
-X.column=['Sepal_Lenght','Sepal_width','Petal_Lenght','Petal_widht']
-Y=pd.Dataframe(iris.target)
-Y.columns=['targets']
+iris = datasets.load_iris()
+
+X = pd.DataFrame(iris.data)
+X.columns = ['Sepal_Length','Sepal_Width','Petal_Length','Petal_Width']
+Y = pd.DataFrame(iris.target)
+Y.columns = ['Targets']
 
 print(X)
 print(Y)
-colormap=np.array(['red','lime','black'])
-
-plt.subplot(1,2,2)
-plt.scatter(X.Petal_Lenght,X.Petal_widht,c=colormap(Y,Targets),s=40)
-plt.title("real clustering")
-
-model11=kMean(n_clusters=3)
-model11.fit(X)
+colormap = np.array(['red', 'lime', 'black'])
 
 plt.subplot(1,2,1)
-plt.scatter(X.Petal_Lenght,X.Petal_widht,c=colormap(model11.labels_),s=40)
-plt.title('K Mean clustering')
-plt.show()
+plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[Y.Targets], s=40)
+plt.title('Real Clustering')
 
-model12=GaussianMixture(n_components=3)
-model12.fit(X)
+model1 = KMeans(n_clusters=3)
+model1.fit(X)
 
 plt.subplot(1,2,2)
-plt.scatter(X.Petal_Lenght,X.Petal_widht,c=colormap(model12.labels_),s=0)
-plt.title("EM Clusting")
+plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[model1.labels_], s=40)
+plt.title('K Mean Clustering')
 plt.show()
 
-print("")
+model2 = GaussianMixture(n_components=3) 
+model2.fit(X)
 
+plt.subplot(1,2,1)
+plt.scatter(X.Petal_Length, X.Petal_Width, c=colormap[model2.predict(X)], s=40)
+plt.title('EM Clustering')
+plt.show()
 
-
+print("Actual Target is:\n", iris.target)
+print("K Means:\n",model1.labels_)
+print("EM:\n",model2.predict(X))
+print("Accuracy of KMeans is ",sm.accuracy_score(Y,model1.labels_))
+print("Accuracy of EM is ",sm.accuracy_score(Y, model2.predict(X)))
