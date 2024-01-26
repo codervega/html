@@ -1,0 +1,9 @@
+#B {
+  background-color: red;
+  text-align: center;
+  display: inline;
+  width: fit-content;
+  align-self: center;
+  align-items: center;
+  /* Adjust this value based on your design */
+}
