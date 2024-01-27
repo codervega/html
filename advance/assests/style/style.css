@@ -1,0 +1,121 @@
+.title{
+  background-color: teal;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+}
+.common{
+  background-color: yellowgreen;
+  border: 3px solid red;
+  padding: 30px;
+  margin: 20px;
+}
+/* p1.html */
+.cssoutline{
+  outline: 10px groove black;
+}
+/* p3.html */
+.cssoverflow .textoverflow1{
+  line-height: 2;
+  font-size: 20px;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+}
+.cssoverflow .textoverflow2{
+  width: 300px;
+  height: 300px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* p4.html */
+.csswhitespace{
+  white-space: pre-wrap;
+}
+/* p5.html notice the changes in the display of element */
+.cssVisibilty1{
+  display: none;
+}
+.cssVisibilty2{
+  visibility: hidden;
+}
+/* p6.html */
+.break p{
+  width: 100px;
+  word-break: break-all;
+  background-color: red;
+  padding: 50px;
+}
+/* p7.html */
+.cssresize
+{
+  resize: both;/*resize both x and y axis*/
+  overflow: auto;
+}
+
+/* p8.html */
+.cssoffset{
+  outline: 10px solid red;
+  border: 1px solid red;
+  outline-offset: 10px;
+}
+.cssoffset2{
+  outline: 2px solid black;
+  border: 2px solid black;
+  outline-offset: 5px ;
+  position: absolute;
+  left: 40%;
+}
+/* p9.html */
+.csscoloumcount{
+  line-height: 2;
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+  column-count: 4;
+  column-fill: balance-all;
+  column-gap: 40px;
+  column-rule: 1px solid black;
+  /* insead of column-rule the colume-width can be used */
+
+}
+.csscoloumcount h1{
+  column-span: all; /* to get heading out of the column property*/
+}
+/* p10.html */
+.cssopacity>p{
+  background-color: blueviolet;
+  color: white;
+  padding: 30px;
+  font-size: 1.3rem;
+  opacity: 0.2;
+
+}
+.cssopacity>div{
+  background-color: rgba(79, 87, 74, 0.514);
+  color: white;
+  padding: 30px;
+  font-size: 1.3rem;
+}
+/* p11.html */
+.cssattribute>h1{
+  background-color: brown;
+}
+.cssattribute>p{
+  background-color: green;
+}
+.cssattribute>p[title]{
+  background-color: yellow;
+  color: white;
+}
+.cssattribute>h1[title]{
+  background-color: black;
+  color: white;
+}
+/* p12.html */
+.cssatribute div p[class |='head']{
+background-color: red;
+padding: 10px;
+margin: 10px;
+}
