@@ -1,0 +1,78 @@
+
+.abhishek{
+  background-color: black;
+  color: #ffffff;
+  width: 90%;
+  margin-bottom: 100px;
+}
+.shukla1 {
+  background-color: yellow;
+  border: 10px solid rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+}
+.shukla2{
+  border: 10px solid red;
+  border-radius: 10px;
+  background-color: rgba(255, 192, 203, 0.219);
+  color: black;
+}
+.shukla3{
+ background-color: khaki;
+ border-radius: 10px;
+ border: 10px solid rgba(128, 0, 128, 0.363);
+}
+/*p5.html*/
+.fontcss{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-style: italic;
+}
+.abhishek1{
+text-align: center;
+text-transform: capitalize;
+line-height: 2;
+word-spacing: 3px;
+letter-spacing: 2x;
+font-size: 10px;
+font-size: 50px;
+}
+/*P6.HTML*/
+.jobotron{
+  background-color: red;
+}
+.nav-bar{
+  background-color: blue;
+}
+
+.nav-bar ul {
+  float: right;
+}
+.nav-bar ul li{
+  display: inline;
+  padding: 5px;
+}
+.nav-bar [alt]{
+  width: 40px;
+  height: 20px;
+  padding: 20px;
+}
+.nav-bar ul li button{
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+}
+/*p7.html*/
+.list-position li::marker{
+  content: "\1F525";
+  color: red;
+}
+.list-position ul li{
+  list-style-position: outside;
+  text-transform: capitalize;
+  background-color: red;
+ margin: 10px;
+ width: fit-content;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>combination selector</title>
+</head>
+<style>
+  .decensent p{
+    background-color: red;
+  }
+  .decensent{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+  .child>p{
+    background-color: rgb(0, 255, 85);
+  }
+  .child{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+  .adacent_sibling{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+  .adacent_sibling p +h6{
+    background-color: red;
+  }
+  .gerneral_sibling h5 ~p{
+    background-color: blue;
+  }
+  .gerneral_sibling {
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+</style>
+<body>
+  <center>
+    <h1>There are 4 combination selectors</h1>
+  </center>
+  <hr>
+  <ul>
+    <li>Decentdent Selector <span style="background-color: pink;">using space</span></li>
+    <li>child Selector <span style="background-color:pink;">(using >)</span></li>
+    <li>adjacent Sibling selector <span style="background-color: pink;">(using +)</span></li>
+    <li>General sunling sselectors <span style="background-color: pink;"> (using symbol)</span></li>
+  </ul>
+  <hr>
+  <h1>We have segrigated the all the above 4 example into very simple way</h1>
+  <div class="decensent">
+    <h3>This is decendent selector</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, officia!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate cupiditate illum asperiores? Quis sequi nisi animi sint sed amet.</p>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia officiis esse illum eligendi labore doloribus dolore vitae consectetur et.</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, at?</p>
+  </div>
+  <hr>
+  <div class="child">
+    <h3>this is child selector</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nemo tenetur, cumque ratione reiciendis vitae neque corrupti alias eaque fuga repellat autem sequi dicta voluptas numquam dolorum distinctio placeat totam.</p>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dignissimos quasi architecto molestias iste fuga vero delectus. Voluptatum, facilis unde.</h5>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias earum fuga magnam fugiat officiis, quod officia in tenetur illo maiores!</p>
+    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem impedit minus voluptatibus earum ut repellat sequi voluptatum excepturi! Quo!</h6>
+  </div>
+  <hr>
+  <div class="adacent_sibling">
+    <h3>This is adacent sibling class</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam eius qui temporibus voluptates, vel dolorem officia suscipit voluptatibus molestiae animi?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit iusto vero cumque impedit architecto numquam culpa incidunt beatae minus provident eveniet aliquam tenetur quis accusantium voluptatem, repudiandae earum molestiae!</p>
+    <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, assumenda?</h6>
+  </div>
+  <hr>
+<div class="gerneral_sibling">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, officia.</p>
+  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos iusto amet a, vitae illum unde commodi, itaque vel saepe minus, nesciunt laborum aliquid cum enim mollitia quaerat sunt voluptas reiciendis?</h5>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quisquam vero provident maiores asperiores, quos voluptates eos possimus dolorem repudiandae.</p>
+  <h2>Abhishek Shukla</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus totam distinctio ad! Autem, numquam accusamus porro dicta hic ab ipsa?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati temporibus nisi, iste quo magni quia unde itaque doloribus! Amet?</p>
+  <h4>Abhishek Shukla</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, voluptatum!</p>
+</div>
+</body>
+</html>
