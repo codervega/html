@@ -76,3 +76,23 @@ font-size: 50px;
  margin: 10px;
  width: fit-content;
 }
+/*p9.html*/
+.abhi{
+  background-color: rgba(0, 0, 0, 0.76);
+  width: 100%;
+}
+
+.abhi ul li{
+  /* list-style: disc outside url(); */
+  list-style-position: outside;
+  line-height: 2;
+  text-transform: capitalize;
+  background-color: red;
+  color: whitesmoke;
+  margin: 10px;
+}
+/*p10.html*/
+.tab{
+  empty-cells: hide;
+}
+/**/
