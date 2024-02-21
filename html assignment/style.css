@@ -1,0 +1,41 @@
+.upper-1{
+  margin-left: 5%;
+  
+}
+.nav-1{
+  display: flex;
+  justify-content: space-between;
+}
+.head1{
+ display: flex;
+ justify-content: space-between;
+ background-color: gray;
+}
+ ul li a{
+  padding-right: 20px;
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.head2 img{
+  width: 20%; 
+  
+}
+.head2{
+  display: inline-flex;
+ gap: 100px;
+}
+.head2 div{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 100px;
+}
+.last-head{
+  background-color: skyblue;
+}
+.last{
+  border: 2px solid blue;
+  
+}
