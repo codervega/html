@@ -39,3 +39,59 @@
   border: 2px solid blue;
   
 }
+/* p2.html*/
+center h1{
+  font-size: 50px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+
+}
+.place-bang{
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  background-color: khaki;
+  
+}
+.place-bang li{
+  list-style-type: none;
+  
+}
+.city figure img {
+  width: 100%;
+}
+.paragrah p{
+background-color: lightgoldenrodyellow;
+}
+#cul [alt]{
+  height: 400px;
+}
+.foot{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  justify-items: center;
+  align-items: center;
+}
+.back-ground{
+  text-align: center;
+  padding: 10px;
+  background-color: khaki;
+}
+.back-ground input{
+  margin: 10px;
+}
+.back-ground form{
+  background-color: lightblue;
+}
+button{
+  margin: 10px;
+}
+.card{
+  text-align: center;
+  padding: 10px;
+  line-height: 3;
+}
