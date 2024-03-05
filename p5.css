@@ -1,0 +1,13 @@
+header{
+  background-image: url(./mediap2/pexels-buro-millennial-1438072.jpg);
+}
+button:hover{
+  background-color: rgba(211, 149, 149, 0.548);
+  border: 2px solid orangered;
+}
+button{
+  color: white; 
+  background-color: red;
+  padding: 10px;
+  font-size: 30px;
+}
