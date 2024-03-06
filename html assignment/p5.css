@@ -1,0 +1,111 @@
+header{
+  background-image: url(./mediap2/pexels-buro-millennial-1438072.jpg);
+  width: 100%;
+  padding-bottom: 5%;
+}
+.nav-3 button:hover{
+  background-color: rgba(211, 149, 149, 0.548);
+  border: 2px solid orangered;
+  cursor: pointer;
+}
+.nav-3 button{
+  color: white; 
+  background-color: red;
+  padding: 10px;
+  border: none;
+  border: 2px solid transparent;
+}
+.nav i{
+  color: white;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  
+}
+.nav-2{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 8px;
+}
+.nav-3{
+  padding: 15px;
+  margin-left: 400px;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.nav-1-2 h1{
+  font-size: 70px;
+  color: white;
+}
+.nav-1-2 p{
+  margin-bottom: 10px;
+  color: white;
+  margin-top: 20px;
+}
+.nav-1-2{
+  padding-top: 100px;
+  margin-left: 4px;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+button{
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.829);
+  color: white;
+  border: none;
+  outline: none;
+  
+}
+ul{
+  list-style-type: none;
+}
+select{
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
+.nav-4 a{
+  color: white;
+  background-color: transparent;
+  text-decoration:underline;
+  text-decoration-color: red;
+  padding: 20px;
+  font-size: 20px;
+}
+.nav-4 button{
+  margin-left: 20px;
+}
+.sec-1{
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+.sec-1-1{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px;
+  flex: 1;
+  line-height: 2;
+}
+.sec-1-2{
+  text-align: center;
+  padding: 100px;
+  flex: 1;
+  background-color: rgba(255, 0, 0, 0.849);
+  color: white;
+}
+.sec-1-2 ul li {
+  padding: 20px;
+}
+body{
+  background-color: black;
+}
