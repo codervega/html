@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Javascript variables</h1>
+    </center>
+    <hr>
+    <pre>
+        DATATYPE
+            1) Primitive Data Types
+            2) Non-Primitive/ Derived Data Types
+        1) PRIMITIVE Data Type 
+            - Int (Integer) -> It accept only round numbers Ex = 0-9
+            - Float ->  It accept decimal value Ex = 10.5
+            - Boolean -> Either TRUE or FALSE
+            - char -> It accept single character Ex= A
+            - void -> returns null value
+
+        2) Non-Primitive/ Derived Data Types
+            - Array
+            - Structure 
+            - Union
+            - Enum 
+            - Pointer 
+            - Function
+    </pre>
+
+    <div id="result">
+
+    </div>
+
+
+    <script>
+        // to declare the variables we need to use keyword like (var let const)
+       
+        var result = document.getElementById('result');
+        //to insert only text we can use innerText
+        result.innerText += "this is the text from js without any tag"
+        //to insert html elements inside the body we need to use innerHTML
+        result.innerHTML += '<h1>This is the text from javascript</h1>'
+
+        var firstnumber; //variable declaration
+        result.innerHTML += <h1>${firstnumber}</h1> //undefines because we are not assaigned any avlue to variable
+
+        firstnumber = "Hello Javascript..!" //assiagning value to variable
+
+        result.innerHTML += <h1>${firstnumber}</h1>;
+        result.innerHTML += "<h1>" + firstnumber + "</h1>"
+        result.innerHTML += "<h1>", firstnumber, "</h1>";
+        result.innerHTML += '<h1 style="color:green"> <i>' + firstnumber + '</i></h1>'
+        result.innerHTML += <h1><i><mark> ${firstnumber} </mark> </i> </h1>
+
+        result.innerHTML += <h1 style="color:red; border:3px solid #000; padding:20px; border-radius:100px">${typeof(firstnumber)}</h1>
+
+        result.innerHTML += '<h1 style="color:red; border:3px solid #000; padding:20px; border-radius:100px"> ' + typeof(firstnumber) + '</h1>'
+
+
+        firstnumber = 200;
+        result.innerHTML += <h1>${firstnumber}</h1>;
+        result.innerHTML += <h1 style="color:red; border:3px solid #000; padding:20px; border-radius:100px">${typeof(firstnumber)}</h1>
+        
+
+        firstnumber = true;
+        result.innerHTML += <h1>${firstnumber}</h1>;
+        result.innerHTML += <h1 style="color:red; border:3px solid #000; padding:20px; border-radius:100px">${typeof(firstnumber)}</h1>
+
+      
+        firstnumber = 'A';
+        result.innerHTML += <h1>${firstnumber}</h1>;
+        result.innerHTML += <h1 style="color:red; border:3px solid #000; padding:20px; border-radius:100px">${typeof(firstnumber)}</h1>
+
+        firstnumber = 10.5;
+        result.innerHTML += <h1>${firstnumber}</h1>;
+        result.innerHTML += <h1 style="color:red; border:3px solid #000; padding:20px; border-radius:100px">${typeof(firstnumber)}</h1>
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="result">
+  </p>
+  <script>
+    let first=10,second=20,total;
+    total=first+second;
+    document.write(`<h1 style="color:green">using document.write: ${total}<\h1>`)
+      document.writeln(`<h1 style="color:red">Using document.writeln: ${total}<\h1>`)
+        console.log(`console.log=>` ,total)
+        let result=document.getElementById(`result`);
+        result.innerText=`The Result is ${total}`
+        result.innerHTML= `<h1>The Result is ${total}<\h1>`
+          alert(`alert`+total)
+          confirm(`confirm`+total)
+          prompt(`prompt`+total)
+
+  </script>
+</body>
+</html>

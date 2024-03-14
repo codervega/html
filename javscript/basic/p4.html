@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <center>
+    <h1>Arthematic Operators</h1>
+  </center>
+  <div id="result">
+
+  </div>
+  <script>
+    let first=50;
+    let second=10;
+     let result=document.getElementById(`result`);
+
+    result.innerHTML="<h1>Addition using +</h1>"
+    let addition=first+second;
+    result.innerHTML+=`<h1>addition of two Number is : ${addition}</h1> <hr>`
+
+    result.innerHTML+="<h1>Subraction of Two number is -</h1>"
+      let subraction=first-second;
+      result.innerHTML+=`<h1>The Subraction of is : ${subraction}</h1> <hr>`
+
+    result.innerHTML+="<h1>Multiplication of two number using *</h1>"
+    let Multiplication=first*second;
+    result.innerHTML+=`<h1>multiplication of two number is: ${Multiplication}</h1> <hr>`
+
+    result.innerHTML+=`<h1>division of two Number using /</h1>`
+    let dib=first/second;
+    result.innerHTML+=`<h1> divison of two number is : ${dib}<h1>`
+
+
+
+  </script>
+</body>
+</html>
