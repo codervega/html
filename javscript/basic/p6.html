@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="result">
+
+  </div>
+  <script>
+    let firstnumber=prompt("Enter the First Number");
+    let Secondnumber=prompt("Enter the Second Number");
+    console.log(firstnumber);
+    console.log(Secondnumber);
+    console.log(firstnumber+Secondnumber);
+
+    console.log(typeof(firstnumber));
+
+    console.log(Number(firstnumber)+Number(Secondnumber));
+
+    console.log(Number(firstnumber));
+
+    let resut=document.getElementById(`result`);
+
+    if(Number(firstnumber)===Number(Secondnumber)){
+      resut.innerHTML=`<h1>The Number are equal</h1>`
+    }
+    else if(Number(firstnumber)>Number(Secondnumber))
+    {
+      resut.innerHTML=`<h1>The first Number is Greater than the other one</h1>`
+    }
+    else if(Number(firstnumber)<Number(Secondnumber))
+    {
+      resut.innerHTML=`<h1>The Second number is greater than the first one</h1>`
+    }
+    else{
+      resut.innerHTML='<h1 style="color:red">the invalid option</h1>'
+    }
+  </script>
+</body>
+</html>
