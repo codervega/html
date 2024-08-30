@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  
+  width: 100%;
+  background-image: url(./images/bicycle_PNG5376.png);
+
+}
+.box1{
+  height: 300px;
+  width: 350px;
+  
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.088),rgb(0, 0, 0)), url(./images/butt.jpg) center/cover no-repeat;
+ 
+  
+}
+h1{
+  color: white;
+}
+.box1 p{
+  padding-top: 5vh;
+  color: bisque;
+}
+.box2{
+  height: 300px;
+  width: 350px;
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.537),rgba(0, 0, 0, 0.088),rgb(0, 0, 0)), url(./images/img1.jpg) center/cover no-repeat;
+  margin-top: 10px;
+ 
+}
+.box2 h1{
+  color: rgb(127, 16, 16);
+  
+}
+.box2 p{
+  color: rgb(230, 150, 52);
+}
+.box3{
+  height: 300px;
+  width: 350px;
+  background: linear-gradient(rgba(208, 172, 178, 0.837),rgb(236, 216, 216, 0.2)), url("./images/imag2.webp") no-repeat center/cover fixed;
+  margin-top: 10px ;
+}
+.box3 h1{
+  color: black;
+  
+}
+.box3 p{
+  color: blueviolet;
+  font-style: italic;
+  padding-top: 35px;
+}
+.box4{
+  height: 300px;
+  width: 350px;
+  background: radial-gradient(rgba(243, 243, 230, 0.895),rgba(230, 236, 230, 0.9), rgba(224, 143, 143, 0.949)), url(./images/car-cars-lamborghini-aventador-63764.jpg) no-repeat center/cover fixed;
+  margin-top: 10px;
+}
+.box4 h1{
+  color: bisque;
+}
+.box4 p{
+  color: rgb(51, 93, 9);
+  font-weight: lighter;
+  padding-top: 50px;
+}
+.box5{
+  height: 300px;
+  width: 350px;
+  background: radial-gradient(rgba(224, 245, 224, 0.5), rgba(245, 198, 206, 0.5), rgba(248, 244, 244, 0.96)), url(./images/tree.jpg) no-repeat center/cover fixed;
+  margin-top: 10px;
+}
+.box5 h1{
+  color: cyan;
+  font-family: monospace;
+}
+.box5 p{
+  color: darkslategray;
+  font-style: oblique;
+  padding-top: 50px;
+}

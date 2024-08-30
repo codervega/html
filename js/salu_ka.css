@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 100px;
+}
+
+p {
+  text-align: justify;
+  padding: 10px;
+  text-indent: 50px;
+  color: rgb(221, 235, 230); 
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+
+}
+
+body {
+  background-image: url(../images/image3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px salmon;
+}
+
+td:hover {
+  background-color: rgb(217, 195, 47);
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 200px;
+  background: rgb(89, 153, 153);
+}

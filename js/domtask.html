@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TASK</title>
+</head>
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  .CLASS1 {
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+  }
+  .class2 {
+    margin: auto;
+  }
+  .secondh1 {
+    font-size: 100px;
+    display: inline;
+  }
+  .firsta {
+    display: block;
+    margin: 7px;
+  }
+  .FIRSTH3 {
+    width: fit-content;
+    background-color: red;
+    padding: 10px 20px;
+  }
+  .firsth1 {
+    display: inline;
+  }
+  li{
+    background-color: red;
+    margin-bottom: 5px;
+    width: 70%;
+    padding: 10px;
+  }
+
+  li:first-child{
+   
+    background-color:rgb(0, 255, 42) ;
+    margin-top: 5px;
+  }
+  li:nth-child(2){
+   padding: 10px;
+   background-color:rgb(47, 0, 255) ;
+   margin-top: 5px;
+ }
+ ul{
+  list-style-type: none;
+ }
+</style>
+<body>
+  <div class="CLASS1">
+    <center>
+      <div class="class2">
+        <h1 class="firsth1">
+          Abhishek Challenege in 30 days
+          <h1 class="secondh1">2024</h1>
+        </h1>
+        <a href="https://github.com/codervega" class="firsta"
+          >30 DAYS OF JAVASCRIPT CHALLENEGE</a
+        >
+        <h3 class="FIRSTH3"></h3>
+        <ul>
+          <li>30DaysOfPython Challenge Done</li>
+          <li>30DaysOfJavaScript Challenge Ongoing</li>
+          <li>30DaysOfReact Challenge Coming</li>
+          <li>30DaysOfFullStack Challenge Coming</li>
+          <li>30DaysOfDataAnalysis Challenge Coming</li>
+          <li>30DaysOfReactNative Challenge Coming</li>
+          <li>30DaysOfMachineLearning Challenge Coming</li>
+      </ul>
+      </div>
+    </center>
+  </div>
+  <script>
+    let secondh1 = document.getElementsByClassName("secondh1")[0];
+    secondh1.style.color = "black";
+
+    function year(element) {
+      if (element.style.color == "black") {
+        element.style.color = "red";
+      } else if (element.style.color == "red") {
+        element.style.color = "green";
+      } else if (element.style.color == "green") {
+        element.style.color = "orange";
+      } else if (element.style.color == "orange") {
+        element.style.color = "purple";
+      } else {
+        element.style.color = "black";
+      }
+    }
+
+    setInterval(() => {
+      year(secondh1);
+    }, 1000);
+
+    function settime() {
+      let date = new Date();
+      let month;
+      let check = date.getMonth();
+
+      switch (check) {
+        case 0:
+          month = "JANUARY";
+          break;
+        case 1:
+          month = "FEBRUARY";
+          break;
+        case 2:
+          month = "MARCH";
+          break;
+        case 3:
+          month = "APRIL";
+          break;
+        case 4:
+          month = "MAY";
+          break;
+        case 5:
+          month = "JUNE";
+          break;
+        case 6:
+          month = "JULY";
+          break;
+        case 7:
+          month = "AUGUST";
+          break;
+        case 8:
+          month = "SEPTEMBER";
+          break;
+        case 9:
+          month = "OCTOBER";
+          break;
+        case 10:
+          month = "NOVEMBER";
+          break;
+        case 11:
+          month = "DECEMBER";
+          break;
+        default:
+          month = "UNKNOWN";
+      }
+
+      let dd = date.getDate();
+      let year = date.getFullYear();
+      let hour = date.getHours();
+      let min = date.getMinutes();
+      let sec = date.getSeconds();
+
+      let formattedTime = `${month} ${dd}, ${year} ${hour.toString().padStart(2, '0')}:${min
+        .toString()
+        .padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+
+      return formattedTime;
+    }
+    let timeElement = document.getElementsByClassName("FIRSTH3")[0];
+    setInterval(() => {
+      
+      timeElement.innerText = settime();
+    }, 1000);
+    function backcl()
+    {
+      if(timeElement.style.backgroundColor === 'red' )
+    {
+      timeElement.style.backgroundColor = "green";
+    }
+    else if(timeElement.style.backgroundColor === "green")
+    {
+      timeElement.style.backgroundColor = 'yellow';
+    }
+    else if(timeElement.style.backgroundColor === 'yellow')
+    {
+      timeElement.style.backgroundColor = 'pink';
+    }
+    else{
+      timeElement.style.backgroundColor = 'red'
+    }
+    
+    }
+    setInterval(()=>{
+      backcl()
+    },1000)
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#linear{
+  background: linear-gradient(rgba(255, 0, 0, 0.568),rgba(255, 255, 0, 0.349)),url(https://www.crabintheair.com/wp-content/uploads/2019/07/things-to-do-in-jaipur-1.jpg) no-repeat center/cover fixed; 
+  height: 100vh;
+
+}
+#radial{
+  width: 30%;
+  height: 40vh;
+  /* background:radial-gradient(khaki,pink);
+   */
+   background: conic-gradient(red,green);
+  
+}
+.imge{
+   background: linear-gradient(rgba(104, 93, 255, 0.274),rgba(0, 128, 0, 0.349)), url(https://www.adotrip.com/public/images/city/master_images/5e4138e6eb7e8-Jaipur_Sightseeing.jpg) no-repeat center/cover fixed; 
+   min-height: 40vh;
+  
+}

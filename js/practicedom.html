@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>KASHMIR</h1>
+  <h1>DELHI</h1>
+  <h1>JAMMU</h1>
+  <h1>UTTAR PRADESH</h1>
+  <h1>RAJASTHAN</h1>
+  <script>
+    let state = document.querySelectorAll("h1");
+
+    // Initialize the color to ensure proper toggling
+    state.forEach((value) => {
+      value.style.color = '#F4C430'; // Initial color set to yellow
+    });
+
+    function rang(states) {
+      if (states.style.color === 'rgb(244, 196, 48)') { // Check for yellow
+        states.style.color = 'white';
+      } else if (states.style.color === 'white') { // Check for white
+        states.style.color = 'green';
+      } else {
+        states.style.color = '#F4C430'; // Set to yellow
+      }
+    }
+
+    state.forEach((value1) => {
+      setInterval(() => {
+        rang(value1);
+      }, 2000);
+    });
+    
+  </script>
+</body>
+</html>
